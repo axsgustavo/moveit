@@ -23,6 +23,7 @@ Caso não tenha o yarn recomendo que baixe, ou se quiser pode usar o npm normalm
 - **Download** - Para baixar e preciso ter o npm, abra seu terminal como administrador (ou root) e digite o seguinte comando: `npm install --global yarn`
 
 # update
+- Add NavBar
 - Add Gradient na barra de progresso
 - Add Novos estilos nos botão do card de desafios
 - Add Barra de regreção (com base no tempo) no botão de cancelamento;
