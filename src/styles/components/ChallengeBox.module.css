@@ -1,0 +1,132 @@
+.challengeBoxContainer {
+   height: 100%;
+
+   background: var(--white);
+   border-radius: 5px;
+   box-shadow: 0 0 65px rgba(0, 0, 0, 0.03);
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   text-align: center;
+}
+
+.challengeNotActive {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   padding: 1.5rem 2rem;
+}
+
+.challengeNotActive strong {
+   font-size: 1.5rem;
+   font-weight: 500;
+   line-height: 1.4;
+   max-width: 70%;
+}
+
+.challengeNotActive p {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   line-height: 1.5;
+
+   max-width: 70%;
+   margin-top: 3rem;
+}
+
+.challengeNotActive p img {
+   margin-bottom: 1.5rem;
+}
+
+.challengeActive {
+   height: 100%;
+   padding: 1.5rem 2rem;
+
+   display: flex;
+   flex-direction: column;
+
+   position: relative;
+}
+
+.challengeActive header {
+   color: var(--blue);
+   font-weight: 600;
+   font-size: 1.25rem;
+   padding: 0 2rem 1.5rem;
+   border-bottom: 1px solid var(--gray-line);
+}
+
+.challengeActive main {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.challengeActive main strong {
+   font-size: 2rem;
+   font-weight: 600;
+   color: var(--title);
+   margin: 1.5rem 0 1rem;
+}
+
+.challengeActive main p {
+   line-height: 1.5;
+}
+
+.challengeActive footer {
+   width: 100%;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+
+   border-top: 1px solid var(--gray-line);
+
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
+
+.challengeActive footer button {
+   height: 4.35rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: none;
+
+   font-size: 1.2rem;
+   font-weight: 500;
+}
+
+.challengeActive footer button.challengeFailedButton {
+   color: var(--red);
+   background: #e83f5b2f;
+   border-radius: 0 0 0 5px;
+
+   transition: .3s filter;
+}
+
+.challengeActive footer button.challengeSucceededButton {
+   color: var(--green);
+   background: #4cd62b2f;
+   border-radius: 0 0 5px 0;
+
+   transition: .3s filter;
+}
+
+.challengeActive footer button:hover {
+   filter: brightness(0.9);
+}
+
+@media(max-width: 800px) {
+   .challengeBoxContainer {
+      height: 500px;
+   }
+}

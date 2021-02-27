@@ -1,0 +1,42 @@
+.container {
+   height: 100vh;
+   max-width: 992px;
+   margin: 0 auto;
+   padding: 2.5rem 2rem;
+
+   display: flex;
+   flex-direction: column;
+}
+
+.container section {
+   flex: 1;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 6.25rem;
+   align-content: center;
+}
+
+@media(max-width: 800px) {
+   .container {
+      height: auto;
+      padding: 3rem 4rem;
+   }
+
+   .container section {
+      padding: 5rem 0;
+      grid-template-columns: 1fr;
+   }
+}
+
+@media(max-width: 440px) {
+   .container {
+      padding: 1.5rem;
+   }
+}
+
+@media(max-width: 320px) {
+   .container {
+      padding: 0.2rem;
+   }
+}

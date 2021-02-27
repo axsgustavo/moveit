@@ -1,0 +1,40 @@
+.experienceBar {
+   display: flex;
+   align-items: center;
+}
+
+.experienceBar span {
+   font-size: 1rem;
+}
+
+.experienceBar > div {
+   flex: 1;
+   height: 4px;
+   border-radius: 4px;
+   background: var(--gray-line);
+   margin: 0 1.5rem;
+   position: relative;
+
+   box-shadow: 0 0 65px rgba(0, 0, 0, 0.05);
+}
+
+.experienceBar > div > div {
+   height: 4px;
+   border-radius: 4px;
+   background: linear-gradient(to right, var(--green), var(--yellow));
+
+   transition: 0.3s all linear;
+}
+
+.experienceBar > div > div > span {
+   position: absolute;
+   top: -4px;
+
+   width: 10px;
+   height: 10px;
+
+   background: linear-gradient(to right, var(--yellow), var(--green));
+   border-radius: 50%;
+   
+   transition: 0.3s all linear;
+}
