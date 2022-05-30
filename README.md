@@ -1,4 +1,5 @@
 # move.it
+Link na vercel: https://moveit-mind.vercel.app/
 #### Aqui está uma aplicação construida em *ReactJS/NextJS* e *TypeScript*.
 Este projeto tem como função exirbir desafios (Exercicios) para pessoas que trabalham sentadas, de frente para telas (Monitores).
 A aplicação gera exercicios para os braços e para os olhos acompanhado por um contador. Tambem tem um sistema de nivel que funciona da seguinte maneira, a cada desafio completado pelo usuario ele recebe uma quantia de XP.
